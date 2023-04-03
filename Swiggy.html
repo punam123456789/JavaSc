@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #screen {
+            width: 100%;
+            /* height: 100%; */
+            /* border: 2px solid red; */
+
+            box-sizing: inherit;
+            -webkit-text-size-adjust: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        div {
+            display: block;
+        }
+
+        #login {
+            /* display: flex; */
+        }
+
+        #login>div:nth-child(1)>img {
+            height: 90px;
+            width: 180px;
+            transition: transform .3s cubic-bezier(.23, 1, .32, 1) 0ms;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 1;
+            fill: #fc8019;
+            margin-top: 92px;
+            -ms-transform: scale(1.5);
+            transform: scale(1);
+            margin-left: 40px;
+
+
+        }
+
+        #log {
+            margin-left: 400px;
+            margin-top: 120px;
+            display: flex;
+            /* border: 1px solid green; */
+            height: 100px;
+            width: 200px;
+
+        }
+
+        #log>div:nth-child(1) {
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            border: none;
+            line-height: 50px;
+            font-size: 14px;
+            height: 50px;
+            padding: 0 2rem;
+            color: #000;
+            letter-spacing: 0;
+            font-size: 16px;
+            font-weight: 600;
+            height: 40px;
+            line-height: 40px;
+            width: auto;
+        }
+
+        #log>div:nth-child(2) {
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            border: none;
+            line-height: 50px;
+            font-size: 14px;
+            height: 50px;
+            padding: 0 2rem;
+            color: #000;
+            letter-spacing: 0;
+            color: #fff;
+            background-color: #000;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12);
+            font-size: 16px;
+            font-weight: 600;
+            height: 40px;
+            line-height: 40px;
+            /* width: auto; */
+        }
+
+        /* #log>div:nth-child(1)>a {
+            width: 100%;
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            border: none;
+            line-height: 50px;
+            font-size: 14px;
+            height: 50px;
+            padding: 0 2rem;
+            color: #000;
+            letter-spacing: 0;
+            font-size: 16px;
+            font-weight: 600;
+            height: 40px;
+            line-height: 40px;
+            width: auto;
+
+        } */
+
+        #pic>div:nth-child(1)>img {
+            position: absolute;
+            width: 45%;
+            /* left: calc(50% + 80px); */
+            right: 0;
+            background-repeat: no-repeat;
+            height: 90%;
+            background-size: cover;
+            background-position: 100%;
+            top: 0;
+            background-color: hsla(26, 5%, 70%, .2);
+        }
+        @media screen and (max-width: 1080px) {
+            #login{
+                width: 100%;
+            }
+            #login >div:nth-child(1){
+                width: 100%;
+
+            }
+            #log>div:nth-child(1){
+                width: 100%;
+            }
+            #log>div:nth-child(2){
+                width: 100%;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+        <div id="login">
+            <div>
+                <img src="swiggy.jpg" alt="img">
+            </div>
+            <div id="log">
+                <div>
+                    <a>Login</a>
+                </div>
+                <div>
+                    <a>Sign up</a>
+                </div>
+
+            </div>
+            <div id="">
+
+            </div>
+
+
+        </div>
+        <div id="pic">
+            <div>
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_1340/Lunch1_vlksgq"
+                    alt="img">
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
