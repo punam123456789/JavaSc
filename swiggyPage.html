@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #screen {
+            width: 100%;
+            /* height: 100px; */
+            /* border: 2px solid blue; */
+
+            box-sizing: inherit;
+            -webkit-text-size-adjust: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        #first {
+            display: flex;
+            /* border: 2px solid black; */
+            width: 100%;
+            height: 100%
+        }
+
+        #login {
+            width: 680px;
+            height: 600px;
+            /* border: 1px solid red; */
+        }
+
+        #login>div:nth-child(1) {
+            height: 90px;
+            width: 180px;
+
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 1;
+            fill: #fc8019;
+            margin-top: 90px;
+            -ms-transform: scale(1.5);
+            transform: scale(1);
+            margin-left: 50px;
+
+        }
+
+        #log {
+            margin-left: 400px;
+            margin-top: 92px;
+            display: flex;
+            /* border: 1px solid green;     */
+            height: 100px;
+            width: 200px;
+            justify-content: right;
+            /* margin-left: 20px; */
+
+        }
+
+        #log>div:nth-child(1) {
+            /* border: 1px solid yellow;     */
+            height: 20%;
+            width: 40%;
+
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            border: none;
+            line-height: 50px;
+            font-size: 14px;
+            height: 50px;
+            padding: 0 2rem;
+            color: #000;
+            letter-spacing: 0;
+            font-size: 16px;
+            font-weight: 600;
+            height: 40px;
+            line-height: 40px;
+            width: auto;
+
+        }
+
+        #log>div:nth-child(2) {
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+            border: none;
+            line-height: 50px;
+            font-size: 14px;
+            height: 50px;
+            color: #000;
+            letter-spacing: 0;
+            color: #fff;
+            background-color: #000;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12);
+            font-size: 16px;
+            font-weight: 600;
+            height: 40px;
+            line-height: 40px;
+            width: 100px;
+
+        }
+
+        #info {
+            margin-left: 63px;
+            margin-top: 77px;
+        }
+
+        #info>div:nth-child(1)>h1 {
+            font-size: 43px;
+        }
+
+        #info>div:nth-child(1)>p {
+            margin-top: 22px;
+            font-size: 22px;
+        }
+
+        #inp {
+            display: flex;
+        }
+
+        #inp>input {
+            display: flex;
+            margin-top: 22px;
+        }
+
+        #inp>input {
+            width: 380px;
+            height: 36px;
+            border: 1px solid rgb(241, 76, 16);
+            border-right: none;
+            padding: 8px;
+        }
+
+        #inp>button {
+            width: 120px;
+            height: 54px;
+            background-color: rgb(237, 74, 15);
+            border: none;
+            font-size: 16px;
+            color: white;
+            margin-top: 22px;
+            cursor: pointer
+        }
+
+        #city {
+            margin-top: 30px;
+        }
+
+        #city>p {
+            margin-top: 10px;
+        }
+
+
+        /* #pic {
+            width: 680px;
+            height: 600px;
+
+            border: 1px solid green;
+        } */
+
+        #pic>div:nth-child(1) {
+            width: 680px;
+            height: 600px;
+
+            /* border: 1px solid green; */
+        }
+
+        #pic>div:nth-child(1)>img {
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid green; */
+            /* padding: 30px; */
+
+
+        }
+
+        #order {
+            display: flex;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            padding-bottom: 80px;
+            max-width: 1500px;
+            min-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            background-color: #000;
+            width: auto;
+            /* border: 2px solid purple; */
+        }
+
+        #order1 {
+            width: 200px;
+            height: 400px;
+            margin-left: 50px;
+            /* border:2px solid red; */
+        }
+
+        #order1>h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 0;
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+            /* -webkit-text-size-adjust: none;
+            -webkit-tap-highlight-color: transparent;
+            -ms-text-size-adjust: none; */
+            outline: none;
+            text-align: center;
+            color: white;
+            margin-left: 20px;
+        }
+
+        #order1>p {
+            font-size: 15px;
+            width: 260px;
+            margin-top: 10px;
+            color: #e0cbc1;
+            line-height: 1.3;
+            text-align: center;
+        }
+
+        #order2>h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 0;
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+            /* -webkit-text-size-adjust: none;
+            -webkit-tap-highlight-color: transparent;
+            -ms-text-size-adjust: none; */
+            outline: none;
+            text-align: center;
+            color: white;
+            margin-left: 20px;
+        }
+
+        #order2>p {
+            font-size: 15px;
+            width: 260px;
+            margin-top: 10px;
+            color: #e0cbc1;
+            line-height: 1.3;
+            text-align: center;
+        }
+
+        #order3>h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 0;
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+            -webkit-text-size-adjust: none;
+            -webkit-tap-highlight-color: transparent;
+            -ms-text-size-adjust: none;
+            outline: none;
+            text-align: center;
+            color: white;
+            margin-right: 10px;
+            margin: 0;
+            padding: 0;
+            width: 250px;
+            /* height: 100%;
+            font-weight: 300; */
+            margin-right: 30px;
+        }
+
+        #order3>p {
+            font-size: 15px;
+            width: 260px;
+            margin-top: 10px;
+            color: #e0cbc1;
+            line-height: 1.3;
+            text-align: center;
+        }
+
+        #order1>img {
+            margin-bottom: 60px;
+            margin-left: 80px;
+            width: 60%;
+        }
+
+        #order2 {
+            width: 200px;
+            height: 300px;
+            margin-left: 40px;
+            /* border:2px solid red; */
+        }
+
+        #order2>img {
+            margin-bottom: 60px;
+            margin-left: 70px;
+            width: 60%;
+        }
+
+        #order3 {
+            width: 200px;
+            height: 300px;
+            margin-left: 40px;
+            margin-right: 70px;
+            /* border:2px solid red; */
+        }
+
+        #order3>img {
+            margin-bottom: 60px;
+            margin-left: 20px;
+            width: 60%;
+        }
+
+        #pocket {
+            /* border: 4px solid brown; */
+
+            /* width: 100%; */
+            max-width: 1200px;
+            min-width: 1200px;
+            position: relative;
+            /* margin: 0 auto; */
+            display: -ms-flexbox;
+            display: flex;
+
+            -ms-flex-pack: center;
+            justify-content: center;
+            height: 600px;
+
+        }
+
+        #text {
+            /* border: 1px solid black; */
+            width: 50%;
+            height: 700px;
+            margin-left: 50px;
+
+
+        }
+
+        #text>h1 {
+            font-size: 40px;
+            font-weight: 600;
+            width: 300px;
+            line-height: 1;
+            letter-spacing: -.45px;
+            font-family: ProximaNova, arial, Helvetica Neue, sans-serif;
+            /* height: 100%; */
+            margin-top: 90px;
+            margin-left: 50px;
+
+            /* border: 1px solid black; */
+            /* margin: auto; */
+        }
+
+        #text>div {
+            display: flex;
+            width: 40%;
+            height: 10%;
+            /* border: 1px solid red; */
+            margin-top: 50px;
+        }
+
+        #text>div>img {
+            height: 100%;
+            width: 100%;
+            margin-left: 40px;
+        }
+
+        #text>p {
+            font-size: 20px;
+            width: 400px;
+            font-weight: 300;
+            padding-top: 20px;
+            padding-bottom: 60px;
+            color: #7e808c;
+            line-height: 1.2;
+            box-sizing: inherit;
+            /* height: 100%; */
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            justify-content: center;
+            margin-left: 50px;
+            margin-top: 20px;
+
+        }
+
+        #text>img {
+            cursor: pointer;
+            margin-right: 20px;
+            border-style: none;
+            height: 54px;
+            color: -webkit-link;
+            height: 100%;
+            font-weight: 300
+        }
+
+        #picture {
+            display: flex;
+            width: 50%;
+
+        }
+
+        /* #picture>img {
+            top: 0;
+            right: 300px;
+            position: absolute;
+            width: 384px;
+            aspect-ratio: auto 384 / 489;
+            height: 489px;
+            overflow-clip-margin: content-box;
+            overflow: clip;
+            ont-weight: 300;
+            color: #282c3f;
+
+        } */
+        #picture>div:nth-child(1) {
+            height: auto;
+            width: 50%;
+            /* border: 1px solid red; */
+        }
+
+        #picture>div:nth-child(1)>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #picture>div:nth-child(2) {
+            height: auto;
+            width: 50%;
+        }
+
+        #picture>div:nth-child(2)>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            color: white;
+            background-color: black;
+            padding: 44px;
+            border-bottom: 1px solid grey;
+            width: auto;
+        }
+
+        .footer .list {
+            margin-inline: 33px;
+
+        }
+
+        .footer .list img {
+            width: 53%;
+            border: 2px solid white;
+            border-radius: 4px;
+            margin-top: 11px;
+        }
+
+        .footer2 {
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            color: white;
+            background-color: black;
+            padding: 44px;
+            border-bottom: 1px solid grey;
+            margin-right: 20px;
+            width: 100%;
+        }
+
+        .footer2 .list {
+            margin-inline: 50px;
+            margin-right: 150px;
+
+        }
+
+        .footer3 {
+            /* border: 1px solid green; */
+            padding: 0 20px;
+            z-index: 10;
+            background-color: #000;
+            min-height: 150px;
+            width: 100%;
+            justify-content: space-between;
+
+            height: 10px;
+            display: flex;
+
+
+
+        }
+
+        .footer2 .list h2 {
+            margin-right: 100px;
+        }
+
+        .footer3 .last img {
+            width: 40%;
+            margin-top: 20px;
+            margin-left: 50px;
+
+        }
+
+        .footer3 p {
+            color: white;
+            margin-top: 30px;
+            font-size: 20px;
+            margin-right: 20px;
+        }
+
+        .footer3 .imgg {
+            /* margin-left: 600px; */
+            /* justify-content: right; */
+            margin-right: 70px;
+
+            margin-top: 40px;
+            /* border: 1px solid red; */
+        }
+
+        .footer3 .imgg img {
+            width: 24px;
+            aspect-ratio: auto 24 / 24;
+            height: 24px;
+            color: white;
+            justify-content: space-between;
+
+        }
+
+        @media screen and (max-width: 1080px) {
+            #first {
+                width: 100%;
+                display: flex;
+            }
+
+            #login {
+                width: 100%;
+                /* display: flex; */
+            }
+
+            #login>div:nth-child(1) {
+                width: 100%;
+
+            }
+
+            #log>div:nth-child(1) {
+                width: 100%;
+            }
+
+            #log>div:nth-child(2) {
+                width: 100%;
+            }
+
+            /* #pic {
+                width: 100%;
+            } */
+
+            #pic>div:nth-child(1) {
+                width: 100%;
+            }
+
+            #pic>div:nth-child(1)>img {
+                width: 100%;
+            }
+
+            #pocket {
+                width: 100%;
+                display: flex;
+                /* -ms-flex-direction: column; */
+                /* flex-direction: column; */
+            }
+
+            #picture>div:nth-child(1) {
+                width: 100%;
+
+            }
+
+            #text {
+                width: 100%;
+            }
+
+            #text>div>img {
+                width: 100%;
+
+            }
+
+            .footer {
+                width: 100%;
+                flex-direction: column;
+                display: flex;
+            }
+
+            .footer .list {
+                width: 100%;
+            }
+
+            .footer2 {
+                width: 100%;
+                flex-direction: column;
+                display: flex;
+            }
+
+            .footer2 .list {
+                width: 100%;
+            }
+
+            .footer3 {
+                width: 100%;
+                /* flex-direction: column; */
+                display: flex;
+            }
+
+            .footer3 .list {
+                width: 100%;
+            }
+        }
+
+
+        @media screen and (max-width: 945px) {
+            #first {
+                width: 100%;
+                display: flex;
+            }
+
+            #login {
+                width: 100%;
+                /* display: flex; */
+            }
+
+            #login>div:nth-child(1) {
+                width: 100%;
+
+            }
+
+            #log>div:nth-child(1) {
+                width: 100%;
+            }
+
+            #log>div:nth-child(2) {
+                width: 100%;
+            }
+
+            #pic {
+                width: 100%;
+            }
+
+            #pic>div:nth-child(1) {
+                width: 100%;
+            }
+
+            #pic>img {
+                width: 100%;
+            }
+
+            .footer {
+                width: 100%;
+                flex-direction: column;
+                display: flex;
+            }
+
+            .footer .list {
+                width: 100%;
+            }
+
+            .footer2 {
+                width: 100%;
+                flex-direction: column;
+                display: flex;
+            }
+
+            .footer2 .list {
+                width: 100%;
+            }
+
+            .footer3 {
+                width: 100%;
+                /* flex-direction: column; */
+                display: flex;
+            }
+
+            .footer3 .list {
+                width: 100%;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+        <div id="first">
+            <div id="login">
+                <div>
+                    <img src="swiggy.jpg" alt="img">
+                </div>
+                <div id="log">
+                    <div>
+                        <a>Login</a>
+                    </div>
+                    <div>
+                        <a>Sign up</a>
+                    </div>
+
+                </div>
+                <div id="info">
+                    <div>
+                        <h1>Cooking gone wrong?</h1>
+                        <p>Order food from favourite restaurants near you.</p>
+                    </div>
+                    <div id="inp">
+                        <input type="text" placeholder="Enter Your Delivery Location">
+                        <button><span>Find Food</span></button>
+
+                    </div>
+                    <div id="city">
+                        <h4 <font style="color: grey;">POPULAR CITIES IN INDIA</font>
+                        </h4>
+                        <p>AhmedabadBangaloreChennaiDelhiGurgaonHyderabadKolkataMumbaiPune& more.</p>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <div id="pic">
+                <div>
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_1340/Lunch1_vlksgq"
+                        alt="img">
+                </div>
+
+            </div>
+
+        </div>
+        <div id="order">
+            <div id="order1">
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_210,h_398/4x_-_No_min_order_x0bxuf"
+                    alt="img">
+                <h3>No Minimum Order </h3>
+                <p>Order in for yourself or for the group, with no restrictions on order value</p>
+            </div>
+            <div id="order2">
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_224,h_412/4x_Live_order_zzotwy"
+                    alt="img">
+                <h3>Live Order Tracking </h3>
+                <p>Know where your order is at all times, from the restaurant to your doorstep</p>
+            </div>
+            <div id="order3">
+                <br>
+                <br>
+
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_248,h_376/4x_-_Super_fast_delivery_awv7sn"
+                    alt="img">
+                <h3>Lightning-Fast Delivery </h3>
+                <p>Experience Swiggy's superfast delivery for food delivered fresh & on time</p>
+
+            </div>
+
+        </div>
+        <div id="pocket">
+            <div id="text">
+                <h1>Restaurants in your pocket</h1>
+                <p>Order from your favorite restaurants & track on the go, with the all-new Swiggy app.</p>
+                <div>
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/play_ip0jfp"
+                        alt="img">
+
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/iOS_ajgrty"
+                        alt="img">
+                </div>
+
+            </div>
+            <div id="picture">
+                <div>
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_768,h_978/pixel_wbdy4n"
+                        alt="img">
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_768,h_978/iPhone_wgconp_j0d1fn"
+                        alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="list">
+                <h2 <font style="color: grey;">COMPANY </font>
+                </h2><br>
+                <p>About us</p><br>
+                <p>Team</p><br>
+                <p>Careers</p><br>
+                <p>Swiggy Blog</p><br>
+                <p>Bug Bounty</p><br>
+                <p>Swiggy One</p><br>
+                <p>Swiggy Corporate</p><br>
+                <p>Swiggy Instamart</p><br>
+                <p>Swiggy Genie</p>
+
+            </div>
+            <div class="list">
+                <h2 <font style="color: grey;">CONTACT </font>
+                </h2><br>
+                <p>Help & Support</p><br>
+                <p>Partner with us</p><br>
+                <p>Ride with us</p>
+
+
+            </div>
+            <div class="list">
+                <h2 <font style="color: grey;">LEGAL </font>
+                </h2><br>
+                <p>Terms & Conditions </p><br>
+                <p>Refund & Cancellation</p><br>
+                <p>Privacy Policy</p><br>
+                <p>Cookie Policy</p><br>
+                <p>Offer Terms</p><br>
+                <p> Phishing & Fraud</p><br>
+                <p>Corporate -Swiggy Money Codes Terms and Conditions</p><br>
+                <p>Corporate - Swiggy Discount Voucher Terms and</p>
+
+
+
+            </div>
+
+            <div class="list">
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/play_ip0jfp"
+                    alt=""><br><br>
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/iOS_ajgrty"
+                    alt="">
+
+
+
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="list">
+                <h2 <font style="color: grey;">WE DELIVER TO</font>
+                </h2><br>
+
+                <p>Adilabad</p><br>
+                <p>Adityapur</p><br>
+                <p>Adoni</p><br>
+                <p>Agartala</p><br>
+                <p>Agra</p><br>
+                <p>Ahmedabad</p><br>
+                <p>Ahmednagar</p><br>
+                <p>Aizawl</p><br>
+                <p>Ajmer</p><br>
+                <p>Akola</p><br>
+                <p>Alappuzha</p><br>
+                <p>Aligarh</p><br>
+                <p>Alipurduar</p>
+
+            </div>
+            <div class="list">
+                <br>
+                <p>Dehradun</p><br>
+                <p> Dehri</p><br>
+                <p>Delhi</p><br>
+                <p>Deoghar</p><br>
+                <p>Deoria-City</p><br>
+                <p>Dewas</p><br>
+                <p>Dhanbad</p><br>
+                <p>Dhar</p><br>
+                <p>Dharamshala</p><br>
+                <p>Dharapuram</p><br>
+                <p>Dharmapuri</p><br>
+                <p>Dharwad</p><br>
+                <p>Dholpur</p><br>
+                <p>Dhule</p>
+
+
+            </div>
+            <div class="list">
+                <br>
+                <p></p>Khanna</p><br>
+                <p> Kharagpur</p><br>
+                <p>Kishanganj</p><br>
+                <p>Kishangarh</p><br>
+                <p>Kochi</p><br>
+                <p>Kodaikanal</p><br>
+                <p>Kohima</p><br>
+                <p>Kokrajhar</p><br>
+                <p>Kolar</p><br>
+                <p>Kolhapur</p><br>
+                <p>Kolkata</p><br>
+                <p>Kollam</p><br>
+                <p>Koppal</p><br>
+                <p>Korba</p>
+
+            </div>
+            <div class="list">
+                <br>
+                <p></p>Khanna</p><br>
+                <p> Kharagpur</p><br>
+                <p>Kishanganj</p><br>
+                <p>Kishangarh</p><br>
+                <p>Kochi</p><br>
+                <p>Kodaikanal</p><br>
+                <p>Kohima</p><br>
+                <p>Kokrajhar</p><br>
+                <p>Kolar</p><br>
+                <p>Kolhapur</p><br>
+                <p>Kolkata</p><br>
+                <p>Kollam</p><br>
+                <p>Koppal</p><br>
+                <p>Korba</p>
+
+            </div>
+
+        </div>
+        <div class="footer3">
+            <div class="last">
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_284/Logo_f5xzza"
+                    alt="">
+            </div>
+            <p>© 2023 Swiggy</p>
+            <div class="imgg">
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-facebook_tfqsuc"
+                    alt="">
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-pinterest_kmz2wd"
+                    alt="">
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-instagram_b7nubh"
+                    alt="">
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-twitter_gtq8dv"
+                    alt="">
+            </div>
+
+        </div>
+
+</body>
+
+</html>

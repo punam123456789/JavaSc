@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/4781840b9b.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        #screen {
+            width: 100%;
+            height: 100%;
+            /* border: 3px solid rgb(209, 23, 23); */
+
+        }
+
+        #navbar {
+            display: flex;
+            background-color: white;
+            width: 100%;
+            /* height: 80px; */
+            /* border: 1px solid rgb(115, 25, 151); */
+            display: flex;
+            /* margin: auto; */
+            /* position: fixed; */
+            cursor: pointer;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+        }
+
+        #logo {
+            display: flex;
+        }
+
+        #logo>div:nth-child(1)>img:hover {
+
+            transform: scale(1.5);
+        }
+
+
+        #logo>div:nth-child(1) {
+            margin-bottom: 30px;
+            /* border: 1px solid red; */
+            margin-left: 60px;
+
+        }
+
+        #logo>img {
+            width: 90px;
+            height: 55px;
+            margin: 25px;
+            /* margin-bottom: 30px;  */
+            /* border: 1px solid red; */
+        }
+
+        #logo>div:nth-child(2) {
+            /* border: 1px solid red; */
+            width: 400px;
+            height: 50px;
+            margin-left: 30px;
+
+
+        }
+
+        #logo>div:nth-child(2)>p {
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        #logo>div:nth-child(2)>p>b {
+
+            margin-right: 5px;
+
+        }
+
+
+
+
+
+        #menu {
+            margin-left: 100px;
+            margin-top: 30px;
+            display: flex;
+            /* border: 1px solid red; */
+        }
+
+        #menu a {
+            margin-left: 10px;
+
+        }
+
+        #menu>div:nth-child(2) {
+            margin-left: 60px;
+            /* margin-bottom: 20px; */
+
+        }
+
+        #menu>div:nth-child(2)h4>a {
+            margin-left: 10px;
+            margin-bottom: 30px;
+
+        }
+
+        #menu>div:nth-child(2)>h4>a>span {
+            /* margin-bottom: 20px;
+            color: rgb(233, 130, 12); */
+            color: #ffa700;
+            font-size: 10px;
+            top: 26px;
+            font-weight: 600;
+            position: absolute;
+            right: -24px;
+            text-transform: uppercase;
+            /* border: 1px solid red; */
+        }
+
+
+        #menu>div:nth-child(2)>h4>img {
+            width: 20px;
+            height: 20px;
+            /* margin-top: 10px; */
+
+
+        }
+
+        #menu>div:nth-child(3) {
+            margin-left: 60px;
+        }
+
+        #menu>div:nth-child(3)>h4>img {
+            /* border: 1px solid red; */
+            width: 20px;
+            height: 20px;
+
+        }
+
+        #menu>div>h4>a {
+            margin-left: 10px;
+            margin-bottom: 30px;
+            font-size: large;
+            /* border: 1px solid red; */
+            justify-content: center;
+            color: grey;
+            text-align: center;
+
+        }
+
+        #menu>div:nth-child(4) {
+            margin-left: 60px;
+        }
+
+        #menu>div:nth-child(4)>h4>img {
+            /* border: 1px solid red; */
+            width: 20px;
+            height: 20px;
+        }
+
+        #menu>div:nth-child(5) {
+            margin-left: 60px;
+        }
+
+        #menu>div:nth-child(5)>h4>img {
+            /* border: 1px solid red; */
+            width: 20px;
+            height: 20px;
+        }
+
+        #rest {
+            width: 100%;
+            height: 1500px;
+            margin-top: 40px;
+            /* border: 1px solid black; */
+
+        }
+
+        #title {
+            width: 100%;
+            height: 130px;
+            border-bottom: 1px solid grey;
+            display: flex;
+
+
+        }
+
+        #rest>div:nth-child(1) {
+            width: 100%;
+            height: 50px;
+            /* border: 2px solid rgb(4, 15, 6); */
+            margin-top: 20px;
+            margin: auto;
+
+        }
+
+        #title>div:nth-child(1)>h1 {
+            margin-left: 40px;
+        }
+
+        #btn {
+            display: flex;
+            margin-top: 20px;
+            margin-left: 300px;
+            justify-content: space-between;
+            /* border: 2px solid rgb(181, 209, 20); */
+
+        }
+
+        #btn>div>button {
+            justify-content: space-evenly;
+            border: none;
+            background-color: white;
+            color: grey;
+            cursor: pointer;
+
+
+        }
+
+        #btn>div>button:hover {
+
+            transform: scale(1.1);
+        }
+
+        #btn>div:nth-child(1)>button {
+            margin-left: 30px;
+            font-size: large;
+            margin-bottom: 10px;
+        }
+
+        #btn>div:nth-child(2)>button {
+            margin-left: 30px;
+            font-size: large;
+            margin-bottom: 10px;
+        }
+
+        #btn>div:nth-child(3)>button {
+            margin-left: 30px;
+            font-size: large;
+            margin-bottom: 10px;
+        }
+
+        #btn>div:nth-child(4)>button {
+            margin-left: 30px;
+            font-size: large;
+            margin-bottom: 10px;
+        }
+
+        #btn>div:nth-child(5)>button {
+            margin-left: 30px;
+            font-size: large;
+            margin-bottom: 10px;
+        }
+
+        #btn>div:nth-child(6)>button {
+            margin-left: 30px;
+            font-size: large;
+            margin-bottom: 10px;
+        }
+
+        #food {
+            display: flex;
+
+        }
+
+        #food>div:nth-child(1) {
+            height: 350px;
+            width: 25%;
+            border: 1px solid grey;
+            margin-top: 20px;
+            margin-left: 20px;
+            /* padding: 20px; */
+        }
+
+        #food>div:nth-child(2) {
+            height: 350px;
+            width: 25%;
+            border: 1px solid grey;
+            margin-top: 20px;
+            margin-left: 20px;
+            /* padding: 20px; */
+        }
+
+        #food>div:nth-child(3) {
+            height: 350px;
+            width: 25%;
+            border: 1px solid grey;
+            margin-top: 20px;
+            margin-left: 20px;
+            /* padding: 20px; */
+        }
+
+        #food>div:nth-child(4) {
+            height: 350px;
+            width: 25%;
+            border: 1px solid grey;
+            margin-top: 20px;
+            margin-left: 20px;
+            /* padding: 20px; */
+        }
+
+        /* #food>div:nth-child(1)> img{
+            width: 60%;
+            height: 60%;
+
+        } */
+        @media screen and (max-width: 1080px) {
+
+            #navbar {
+                width: 100%;
+                margin: 0px;
+                position: fixed;
+                top: 0;
+                z-index: 1;
+            }
+
+            #logo {
+                width: 100%;
+                direction: inherit;
+            }
+
+            #logo>img {
+                width: 100%;
+                direction: inherit;
+            }
+
+            #logo>p {
+                width: 100%;
+                direction: inherit;
+            }
+
+            #menu {
+                width: 100%;
+            }
+            #menu >div{
+                width: 100%;
+                display: flex;
+            }
+            #rest{
+                width: 100%;
+                
+                
+                
+            }
+            #title{
+                width: 100%;
+                display: flex;
+            }
+            #title>div{
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div id="logo">
+                <div>
+                    <img src="logoswig.jpg">
+                </div>
+                <div>
+                    <p><b>Vashi</b> Navi Mumbai, Maharashtra, India</p>
+                </div>
+            </div>
+
+            <div id="menu">
+                <div>
+                    <h4> <i class="fa-solid fa-magnifying-glass"></i><a>Search</a></h4>
+                </div>
+                <div>
+                    <h4><img src="discount.png" alt="img"><a>Offers<span>New</span></a></h4>
+                </div>
+                <div>
+                    <h4><img src="help.png" alt=""><a>help</a></h4>
+                </div>
+                <div>
+                    <h4><img src="refer.png" alt=""><a>Sign in</a></h4>
+                </div>
+                <div>
+                    <h4><img src="shopping-cart.png" alt=""><a>Cart</a></h4>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div id="rest">
+            <div id="title">
+                <div>
+                    <h1>397 restaurants</h1>
+                </div>
+                <div id="btn">
+                    <div>
+                        <button>Relevance</button>
+                    </div>
+                    <div>
+                        <button>Delivery Time</button>
+                    </div>
+
+                    <div>
+                        <button>Rating</button>
+                    </div>
+                    <div>
+                        <button>Cost: Low To High</button>
+                    </div>
+
+
+                    <div>
+                        <button>Cost: High To Low</button>
+                    </div>
+                    <div>
+                        <button>
+                            <font style="color: #ffa700;">Filters</font>
+                        </button>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div id="food">
+                <div>
+                    <!-- <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/0a6f66d75eb042123e34d89bef7189ce" alt="img"> -->
+                </div>
+                <div>
+
+                </div>
+                <div></div>
+                <div></div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
