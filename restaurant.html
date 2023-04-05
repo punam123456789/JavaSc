@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/4781840b9b.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        #screen {
+            width: 100%;
+            /* height: 100%; */
+            /* border: 3px solid rgb(209, 23, 23); */
+
+        }
+
+        #navbar {
+            display: flex;
+            background-color: white;
+            width: 100%;
+            height: 80px;
+            border: 1px solid rgb(115, 25, 151);
+
+            /* position: fixed; */
+            top: 0;
+            padding: 0;
+            cursor: pointer;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+        }
+
+        #logo {
+            display: flex;
+        }
+
+        #logo>div:nth-child(1)>img:hover {
+
+            transform: scale(1.5);
+        }
+
+
+        #logo>div:nth-child(1) {
+            margin-bottom: 30px;
+            /* border: 1px solid red; */
+            /* margin-left: 60px; */
+            padding-left: 60px;
+            /* padding-top: 10px; */
+
+        }
+
+        #logo>div>img {
+            width: 55%;
+            height: 65%;
+            margin: 25px;
+            /* margin-bottom: 30px;  */
+            /* border: 1px solid red; */
+        }
+
+        #logo>div:nth-child(2) {
+            /* border: 1px solid red; */
+            width: 400px;
+            height: 50px;
+            /* padding-left: 30px; */
+            /* margin-bottom: 20px; */
+
+
+        }
+
+        #logo>div:nth-child(2)>p {
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        #logo>div:nth-child(2)>p>b {
+
+            margin-right: 5px;
+
+        }
+
+
+
+
+
+        #menu {
+            margin-left: 100px;
+            margin-top: 30px;
+            display: flex;
+            /* border: 1px solid red; */
+        }
+
+        #menu a {
+            margin-left: 10px;
+
+        }
+
+        #menu>div:nth-child(2) {
+            margin-left: 60px;
+            /* margin-bottom: 20px; */
+
+        }
+
+        #menu>div:nth-child(2)h4>a {
+            margin-left: 10px;
+            margin-bottom: 30px;
+
+        }
+
+        #menu>div:nth-child(2)>div>span {
+            color: #ffa700;
+            font-size: 10px;
+            top: 26px;
+            font-weight: 600px;
+            font-size: small;
+            position: absolute;
+            right: -24px;
+            text-transform: uppercase;
+            border: 1px solid red;
+        }
+
+
+
+        #menu>div:nth-child(2)>h4>img {
+            width: 20px;
+            height: 20px;
+            /* margin-top: 10px; */
+
+
+        }
+
+        #menu>div:nth-child(3) {
+            margin-left: 60px;
+        }
+
+        #menu>div:nth-child(3)>h4>img {
+            /* border: 1px solid red; */
+            width: 20px;
+            height: 20px;
+
+        }
+
+        #menu>div>h4>a {
+            margin-left: 10px;
+            margin-bottom: 30px;
+            font-size: large;
+            /* border: 1px solid red; */
+            justify-content: center;
+            color: grey;
+            text-align: center;
+
+        }
+
+        #menu>div:nth-child(4) {
+            margin-left: 60px;
+        }
+
+        #menu>div:nth-child(4)>h4>img {
+            /* border: 1px solid red; */
+            width: 20px;
+            height: 20px;
+        }
+
+        #menu>div:nth-child(5) {
+            margin-left: 60px;
+        }
+
+        #menu>div:nth-child(5)>h4>img {
+            /* border: 1px solid red; */
+            width: 20px;
+            height: 20px;
+        }
+
+        #sc {
+
+            width: 95%;
+            height: 1500px;
+            margin-top: 20px;
+
+            padding: 0px 40px 0px 40px;
+
+            border: 1px solid black;
+            background-color: transparent
+
+        }
+
+        #test {
+            max-width: 700px;
+            min-width: 700px;
+            margin-left: 0;
+            z-index: 7;
+            height: 30px;
+            font-size: 14px;
+            color: #93959f;
+
+            display: flex;
+
+            align-items: center;
+
+            position: relative;
+            margin: 0 auto;
+            /* border: 1px solid red; */
+           
+        }
+
+        #test>button {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            text-align: left;
+            /* border: 1px solid red; */
+            margin-left: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div id="logo">
+                <div>
+                    <img src="logoswig.jpg">
+                </div>
+                <div>
+                    <p><b><u>Vashi</u></b> Navi Mumbai, Maharashtra, India</p>
+                </div>
+            </div>
+
+            <div id="menu">
+                <div>
+                    <h4> <i class="fa-solid fa-magnifying-glass"></i><a>Search</a></h4>
+                </div>
+                <div>
+                    <h4><img src="discount.png" alt="img"><a>Offers</a></h4>
+
+
+                </div>
+                <div>
+                    <h4><img src="help.png" alt=""><a>help</a></h4>
+                </div>
+                <div>
+                    <h4><img src="refer.png" alt=""><a>Sign in</a></h4>
+                </div>
+                <div>
+                    <h4><img src="shopping-cart.png" alt=""><a>Cart</a></h4>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div id="sc">
+            <div id="test">
+                <div>
+                    <a href="https://www.swiggy.com/"></a>
+                    <span class="home">Home /</span>
+                </div>
+                <meta itemprop="position" content="1">
+
+                <div>
+                    <a href="https://www.swiggy.com/"></a>
+                    <span class="home"> Mumbai /</span>
+                </div>
+                <meta itemprop="position" content="2">
+                <div>
+                    <a href="https://www.swiggy.com/"></a>
+                    <span class="home"> Vashi / </span>
+                </div>
+                <meta itemprop="position" content="3">
+                <div>
+                    <a href="https://www.swiggy.com/"></a>
+                    <span class="home"> Navaratna Veg Restaurant </span>
+                </div>
+                <meta itemprop="position" content="4">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            
+
+        </div>
+    </div>
+
+</body>
+
+</html>
