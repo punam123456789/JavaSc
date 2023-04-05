@@ -15,7 +15,7 @@
 
         #screen {
             width: 100%;
-            height: 100%;
+            /* height: 100%; */
             /* border: 3px solid rgb(209, 23, 23); */
 
         }
@@ -24,12 +24,11 @@
             display: flex;
             background-color: white;
             width: 100%;
-            /* height: 80px; */
-            /* border: 1px solid rgb(115, 25, 151); */
-            display: flex;
-            /* margin: auto; */
-            /* position: fixed; */
-            margin-top: 0;
+            height: 80px;
+            border: 1px solid rgb(115, 25, 151);
+
+            position: fixed;
+            top: 0;
             padding: 0;
             cursor: pointer;
             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
@@ -50,13 +49,13 @@
             /* border: 1px solid red; */
             /* margin-left: 60px; */
             padding-left: 60px;
-            padding-top: 10px;
+            /* padding-top: 10px; */
 
         }
 
-        #logo>img {
-            width: 90px;
-            height: 55px;
+        #logo>div>img {
+            width: 55%;
+            height: 65%;
             margin: 25px;
             /* margin-bottom: 30px;  */
             /* border: 1px solid red; */
@@ -112,8 +111,6 @@
         }
 
         #menu>div:nth-child(2)>h4>a>span {
-            /* margin-bottom: 20px;
-            color: rgb(233, 130, 12); */
             color: #ffa700;
             font-size: 10px;
             top: 26px;
@@ -121,8 +118,8 @@
             position: absolute;
             right: -24px;
             text-transform: uppercase;
-            /* border: 1px solid red; */
         }
+        
 
 
         #menu>div:nth-child(2)>h4>img {
@@ -177,22 +174,27 @@
 
         #rest {
             width: 95%;
-            height: 1500px;
+            /* height: 1500px; */
             margin-top: 40px;
+            /* position: fixed; */
             /* padding-left: 40px;
             padding-right: 40px; */
             /* margin-right: 20px; */
             padding: 0px 40px 0px 40px;
             /* padding-right: 25px; */
-            /* border: 1px solid black; */
+            border: 1px solid black;
 
         }
 
         #title {
             width: 100%;
-            height: 130px;
+            height: 50%;
+            /* position: relative; */
             border-bottom: 1px solid grey;
             display: flex;
+            /* margin-top: 60px; */
+            padding-top: 100px;
+            /* box-sizing: inherit; */
 
 
 
@@ -215,11 +217,13 @@
             display: flex;
             margin-top: 20px;
             /* margin-left: 300px; */
-            padding-left: 150px;
+            padding-left: 230px;
             justify-content: space-between;
+            /* padding-right: 30px; */
             /* border: 2px solid rgb(181, 209, 20); */
 
         }
+
 
         #btn>div>button {
             justify-content: space-evenly;
@@ -227,8 +231,46 @@
             background-color: white;
             color: grey;
             cursor: pointer;
+            /* font-size: small; */
 
 
+        }
+
+        #btn>div:nth-child(1) {
+            width: 15%;
+            height: 80%;
+            /* border: 1px solid red; */
+        }
+
+        #btn>div:nth-child(2) {
+            width: 20%;
+            height: 80%;
+            /* border: 1px solid red;    */
+        }
+
+        #btn>div:nth-child(3) {
+            width: 15%;
+            height: 80%;
+            margin-left: 10px;
+            /* border: 1px solid red;    */
+        }
+
+        #btn>div:nth-child(4) {
+            width: 25%;
+            height: 80%;
+            /* border: 1px solid red;    */
+        }
+
+        #btn>div:nth-child(5) {
+            width: 25%;
+            height: 80%;
+            /* border: 1px solid red;    */
+        }
+
+        #btn>div:nth-child(6) {
+            width: 15%;
+            height: 80%;
+            /* border: 1px solid red;    */
         }
 
         #btn>div>button:hover {
@@ -236,45 +278,67 @@
             transform: scale(1.1);
         }
 
+
         #btn>div:nth-child(1)>button {
-            margin-left: 30px;
+            /* margin-left: 30px; */
+            /* padding-left: 10px; */
             font-size: large;
             margin-bottom: 10px;
+            font-size: 17px;
+            width: 100%;
+            height: 100%;
         }
 
         #btn>div:nth-child(2)>button {
-            margin-left: 30px;
+            /* margin-left: 0px; */
             font-size: large;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 17px;
+            width: 100%;
+            height: 100%;
         }
 
         #btn>div:nth-child(3)>button {
-            margin-left: 30px;
+            margin-right: 30px;
             font-size: large;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 17px;
+            width: 100%;
+            height: 100%;
+            /* padding-right: 10px; */
         }
 
         #btn>div:nth-child(4)>button {
-            margin-left: 30px;
+            /* margin-left: 50px; */
             font-size: large;
             margin-bottom: 10px;
+            font-size: 17px;
+            width: 100%;
+            height: 100%;
         }
 
         #btn>div:nth-child(5)>button {
             margin-left: 30px;
             font-size: large;
             margin-bottom: 10px;
+            font-size: 17px;
+            width: 100%;
+            height: 100%;
         }
 
         #btn>div:nth-child(6)>button {
             margin-left: 30px;
             font-size: large;
             margin-bottom: 10px;
+            font-size: 17px;
+            width: 100%;
+            height: 100%;
         }
 
         .food {
+            margin-top: 50px;
             display: flex;
-            padding: 0px 20px 0px 20px;
+            /* padding: 0px 20px 0px 20px; */
 
         }
 
@@ -350,6 +414,7 @@
             /* text-align: center; */
 
         }
+
         .footer {
             display: flex;
             justify-content: center;
@@ -450,7 +515,7 @@
         }
 
 
-        
+
         @media screen and (max-width: 1080px) {
 
             #navbar {
@@ -522,7 +587,7 @@
                     <h4> <i class="fa-solid fa-magnifying-glass"></i><a>Search</a></h4>
                 </div>
                 <div>
-                    <h4><img src="discount.png" alt="img"><a>Offers<span>New</span></a></h4>
+                    <h4><img src="discount.png" alt="img"><a>Offers</a><span style="color: #ffa700;">NEW</span></h4>
                 </div>
                 <div>
                     <h4><img src="help.png" alt=""><a>help</a></h4>
@@ -538,473 +603,482 @@
 
             </div>
         </div>
+        <div>
 
-        <div id="rest">
-            <div id="title">
-                <div>
-                    <h1>397 restaurants</h1>
+            <div id="rest">
+                <div id="title">
+                    <div>
+                        <h1>397 restaurants</h1>
+                    </div>
+                    <div id="btn">
+                        <div>
+                            <button>Relevance</button>
+                        </div>
+                        <div>
+                            <button>Delivery Time</button>
+                        </div>
+
+                        <div>
+                            <button>Rating</button>
+                        </div>
+                        <div>
+                            <button>Cost: Low To High</button>
+                        </div>
+
+
+                        <div>
+                            <button>Cost: High To Low</button>
+                        </div>
+                        <div>
+                            <button>
+                                <font style="color: #ffa700;">Filters</font>
+                            </button>
+                        </div>
+
+
+
+                    </div>
                 </div>
-                <div id="btn">
+                <div class="food">
                     <div>
-                        <button>Relevance</button>
-                    </div>
-                    <div>
-                        <button>Delivery Time</button>
+                        <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/plgs0tyizbcb2z7vrgqk"
+                            alt="">
+                        <h4>Dabba Garam (Homely Meals & More)</h4>
+                        <p><small>Home Food, North Indian, Thalis</small></p>
+                        <div class="rate">
+                            <div>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>4.4</span>
+                            </div>
+                            <div>.</div>
+                            <div>21 MINS</div>
+                            <div>.</div>
+                            <div>₹150 FOR TWO</div>
+
+
+                        </div>
+
+
+                        <div class="offer">
+                            <img style="color: brown;" src="discount.png" alt=""> 30% off | Use TRYNEW
+
+                        </div>
                     </div>
 
                     <div>
-                        <button>Rating</button>
+                        <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/7bb739d7f6ae8b4ce8ed590765dffd2f"
+                            alt="">
+                        <h4>McDonald's</h4>
+                        <p><small>Burgers, Beverages, Cafe, Desserts</small></p>
+                        <div class="rate">
+                            <div>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>4.4</span>
+                            </div>
+                            <div>.</div>
+                            <div>14 MINS</div>
+                            <div>.</div>
+                            <div>₹200 FOR TWO</div>
+
+                        </div>
+
+
+                        <div class="offer">
+                            <img style="color: brown;" src="discount.png" alt=""> 20% off | Use TRYNEW
+
+                        </div>
                     </div>
                     <div>
-                        <button>Cost: Low To High</button>
+                        <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/wnzhrkqvnkiriqajencb"
+                            alt="">
+                        <h4>The Belgian Waffle Co.</h4>
+                        <p><small>Burgers, Beverages, Cafe, Desserts</small></p>
+                        <div class="rate">
+                            <div>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>4.4</span>
+                            </div>
+                            <div>.</div>
+                            <div>19 MINS</div>
+                            <div>.</div>
+                            <div>₹200 FOR TWO</div>
+
+                        </div>
+
+
+                        <div class="offer">
+                            <img style="color: brown;" src="discount.png" alt=""> 20% off | Use TRYNEW
+
+                        </div>
                     </div>
-
-
                     <div>
-                        <button>Cost: High To Low</button>
-                    </div>
-                    <div>
-                        <button>
-                            <font style="color: #ffa700;">Filters</font>
-                        </button>
-                    </div>
+                        <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/f87ny0p8hpeynrv0ycc5"
+                            alt="">
+                        <h4>Meraki</h4>
+                        <p><small>Chinese</small></p>
+                        <div class="rate">
+                            <div>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>4.4</span>
+                            </div>
+                            <div>.</div>
+                            <div>23 MINS</div>
+                            <div>.</div>
+                            <div>₹500 FOR TWO</div>
+
+                        </div>
 
 
+                        <div class="offer">
+                            <img style="color: brown;" src="discount.png" alt=""> Flat ₹125 off on orders above ₹249
+
+                        </div>
+                    </div>
 
                 </div>
+                <div class="food">
+                    <div>
+                        <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/wz3dfvamdawymtxdspu5"
+                            alt="">
+                        <h4>R Bhagat Tarrachand</h4>
+                        <p><small>North Indian, Chinese, Street Food</small></p>
+                        <div class="rate">
+                            <div>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>4.4</span>
+                            </div>
+                            <div>.</div>
+                            <div>21 MINS</div>
+                            <div>.</div>
+                            <div>₹150 FOR TWO</div>
+
+
+                        </div>
+
+
+                        <div class="offer">
+                            <img style="color: brown;" src="discount.png" alt=""> 30% off | Use TRYNEW
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/7bb739d7f6ae8b4ce8ed590765dffd2f"
+                            alt="">
+                        <h4>McDonald's</h4>
+                        <p><small>Burgers, Beverages, Cafe, Desserts</small></p>
+                        <div class="rate">
+                            <div>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>4.4</span>
+                            </div>
+                            <div>.</div>
+                            <div>14 MINS</div>
+                            <div>.</div>
+                            <div>₹200 FOR TWO</div>
+
+                        </div>
+
+
+                        <div class="offer">
+                            <img style="color: brown;" src="discount.png" alt=""> 20% off | Use TRYNEW
+
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/wnzhrkqvnkiriqajencb"
+                            alt="">
+                        <h4>The Belgian Waffle Co.</h4>
+                        <p><small>Burgers, Beverages, Cafe, Desserts</small></p>
+                        <div class="rate">
+                            <div>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>4.4</span>
+                            </div>
+                            <div>.</div>
+                            <div>19 MINS</div>
+                            <div>.</div>
+                            <div>₹200 FOR TWO</div>
+
+                        </div>
+
+
+                        <div class="offer">
+                            <img style="color: brown;" src="discount.png" alt=""> 20% off | Use TRYNEW
+
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/f87ny0p8hpeynrv0ycc5"
+                            alt="">
+                        <h4>Meraki</h4>
+                        <p><small>Chinese</small></p>
+                        <div class="rate">
+                            <div>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>4.4</span>
+                            </div>
+                            <div>.</div>
+                            <div>23 MINS</div>
+                            <div>.</div>
+                            <div>₹500 FOR TWO</div>
+
+                        </div>
+
+
+                        <div class="offer">
+                            <img style="color: brown;" src="discount.png" alt=""> Flat ₹125 off on orders above ₹249
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="food">
+                    <div>
+                        <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/wz3dfvamdawymtxdspu5"
+                            alt="">
+                        <h4>R Bhagat Tarrachand</h4>
+                        <p><small>North Indian, Chinese, Street Food</small></p>
+                        <div class="rate">
+                            <div>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>4.4</span>
+                            </div>
+                            <div>.</div>
+                            <div>21 MINS</div>
+                            <div>.</div>
+                            <div>₹150 FOR TWO</div>
+
+
+                        </div>
+
+
+                        <div class="offer">
+                            <img style="color: brown;" src="discount.png" alt=""> 30% off | Use TRYNEW
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/7bb739d7f6ae8b4ce8ed590765dffd2f"
+                            alt="">
+                        <h4>McDonald's</h4>
+                        <p><small>Burgers, Beverages, Cafe, Desserts</small></p>
+                        <div class="rate">
+                            <div>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>4.4</span>
+                            </div>
+                            <div>.</div>
+                            <div>14 MINS</div>
+                            <div>.</div>
+                            <div>₹200 FOR TWO</div>
+
+                        </div>
+
+
+                        <div class="offer">
+                            <img style="color: brown;" src="discount.png" alt=""> 20% off | Use TRYNEW
+
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/wnzhrkqvnkiriqajencb"
+                            alt="">
+                        <h4>The Belgian Waffle Co.</h4>
+                        <p><small>Burgers, Beverages, Cafe, Desserts</small></p>
+                        <div class="rate">
+                            <div>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>4.4</span>
+                            </div>
+                            <div>.</div>
+                            <div>19 MINS</div>
+                            <div>.</div>
+                            <div>₹200 FOR TWO</div>
+
+                        </div>
+
+
+                        <div class="offer">
+                            <img style="color: brown;" src="discount.png" alt=""> 20% off | Use TRYNEW
+
+                        </div>
+                    </div>
+                    <div>
+                        <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/f87ny0p8hpeynrv0ycc5"
+                            alt="">
+                        <h4>Meraki</h4>
+                        <p><small>Chinese</small></p>
+                        <div class="rate">
+                            <div>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>4.4</span>
+                            </div>
+                            <div>.</div>
+                            <div>23 MINS</div>
+                            <div>.</div>
+                            <div>₹500 FOR TWO</div>
+
+                        </div>
+
+
+                        <div class="offer">
+                            <img style="color: brown;" src="discount.png" alt=""> Flat ₹125 off on orders above ₹249
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
             </div>
-            <div class="food">
-                <div>
-                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/plgs0tyizbcb2z7vrgqk"
+            <div class="footer">
+                <div class="list">
+                    <h2 <font style="color: grey;">COMPANY </font>
+                    </h2><br>
+                    <p>About us</p><br>
+                    <p>Team</p><br>
+                    <p>Careers</p><br>
+                    <p>Swiggy Blog</p><br>
+                    <p>Bug Bounty</p><br>
+                    <p>Swiggy One</p><br>
+                    <p>Swiggy Corporate</p><br>
+                    <p>Swiggy Instamart</p><br>
+                    <p>Swiggy Genie</p>
+
+                </div>
+                <div class="list">
+                    <h2 <font style="color: grey;">CONTACT </font>
+                    </h2><br>
+                    <p>Help & Support</p><br>
+                    <p>Partner with us</p><br>
+                    <p>Ride with us</p>
+
+
+                </div>
+                <div class="list">
+                    <h2 <font style="color: grey;">LEGAL </font>
+                    </h2><br>
+                    <p>Terms & Conditions </p><br>
+                    <p>Refund & Cancellation</p><br>
+                    <p>Privacy Policy</p><br>
+                    <p>Cookie Policy</p><br>
+                    <p>Offer Terms</p><br>
+                    <p> Phishing & Fraud</p><br>
+                    <p>Corporate -Swiggy Money Codes Terms and Conditions</p><br>
+                    <p>Corporate - Swiggy Discount Voucher Terms and</p>
+
+
+
+                </div>
+
+                <div class="list">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/play_ip0jfp"
+                        alt=""><br><br>
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/iOS_ajgrty"
                         alt="">
-                    <h4>Dabba Garam (Homely Meals & More)</h4>
-                    <p><small>Home Food, North Indian, Thalis</small></p>
-                    <div class="rate">
-                        <div>
-                            <span><i class="fa-regular fa-star"></i></span>
-                            <span>4.4</span>
-                        </div>
-                        <div>.</div>
-                        <div>21 MINS</div>
-                        <div>.</div>
-                        <div>₹150 FOR TWO</div>
 
 
-                    </div>
+
+                </div>
+            </div>
+            <div class="footer2">
+                <div class="list">
+                    <h2 <font style="color: grey;">WE DELIVER TO</font>
+                    </h2><br>
+
+                    <p>Adilabad</p><br>
+                    <p>Adityapur</p><br>
+                    <p>Adoni</p><br>
+                    <p>Agartala</p><br>
+                    <p>Agra</p><br>
+                    <p>Ahmedabad</p><br>
+                    <p>Ahmednagar</p><br>
+                    <p>Aizawl</p><br>
+                    <p>Ajmer</p><br>
+                    <p>Akola</p><br>
+                    <p>Alappuzha</p><br>
+                    <p>Aligarh</p><br>
+                    <p>Alipurduar</p>
+
+                </div>
+                <div class="list">
+                    <br>
+                    <p>Dehradun</p><br>
+                    <p> Dehri</p><br>
+                    <p>Delhi</p><br>
+                    <p>Deoghar</p><br>
+                    <p>Deoria-City</p><br>
+                    <p>Dewas</p><br>
+                    <p>Dhanbad</p><br>
+                    <p>Dhar</p><br>
+                    <p>Dharamshala</p><br>
+                    <p>Dharapuram</p><br>
+                    <p>Dharmapuri</p><br>
+                    <p>Dharwad</p><br>
+                    <p>Dholpur</p><br>
+                    <p>Dhule</p>
 
 
-                    <div class="offer">
-                        <img style="color: brown;" src="discount.png" alt=""> 30% off | Use TRYNEW
+                </div>
+                <div class="list">
+                    <br>
+                    <p></p>Khanna</p><br>
+                    <p> Kharagpur</p><br>
+                    <p>Kishanganj</p><br>
+                    <p>Kishangarh</p><br>
+                    <p>Kochi</p><br>
+                    <p>Kodaikanal</p><br>
+                    <p>Kohima</p><br>
+                    <p>Kokrajhar</p><br>
+                    <p>Kolar</p><br>
+                    <p>Kolhapur</p><br>
+                    <p>Kolkata</p><br>
+                    <p>Kollam</p><br>
+                    <p>Koppal</p><br>
+                    <p>Korba</p>
 
-                    </div>
+                </div>
+                <div class="list">
+                    <br>
+                    <p></p>Khanna</p><br>
+                    <p> Kharagpur</p><br>
+                    <p>Kishanganj</p><br>
+                    <p>Kishangarh</p><br>
+                    <p>Kochi</p><br>
+                    <p>Kodaikanal</p><br>
+                    <p>Kohima</p><br>
+                    <p>Kokrajhar</p><br>
+                    <p>Kolar</p><br>
+                    <p>Kolhapur</p><br>
+                    <p>Kolkata</p><br>
+                    <p>Kollam</p><br>
+                    <p>Koppal</p><br>
+                    <p>Korba</p>
+
                 </div>
 
-                <div>
-                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/7bb739d7f6ae8b4ce8ed590765dffd2f"
+            </div>
+            <div class="footer3">
+                <div class="last">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_284/Logo_f5xzza"
                         alt="">
-                    <h4>McDonald's</h4>
-                    <p><small>Burgers, Beverages, Cafe, Desserts</small></p>
-                    <div class="rate">
-                        <div>
-                            <span><i class="fa-regular fa-star"></i></span>
-                            <span>4.4</span>
-                        </div>
-                        <div>.</div>
-                        <div>14 MINS</div>
-                        <div>.</div>
-                        <div>₹200 FOR TWO</div>
-
-                    </div>
-
-
-                    <div class="offer">
-                        <img style="color: brown;" src="discount.png" alt=""> 20% off | Use TRYNEW
-
-                    </div>
                 </div>
-                <div>
-                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/wnzhrkqvnkiriqajencb" alt="">
-                    <h4>The Belgian Waffle Co.</h4>
-                    <p><small>Burgers, Beverages, Cafe, Desserts</small></p>
-                    <div class="rate">
-                        <div>
-                            <span><i class="fa-regular fa-star"></i></span>
-                            <span>4.4</span>
-                        </div>
-                        <div>.</div>
-                        <div>19 MINS</div>
-                        <div>.</div>
-                        <div>₹200 FOR TWO</div>
-
-                    </div>
-
-
-                    <div class="offer">
-                        <img style="color: brown;" src="discount.png" alt=""> 20% off | Use TRYNEW
-
-                    </div>
-                </div>
-                <div>
-                   <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/f87ny0p8hpeynrv0ycc5" alt="">
-                    <h4>Meraki</h4>
-                    <p><small>Chinese</small></p>
-                    <div class="rate">
-                        <div>
-                            <span><i class="fa-regular fa-star"></i></span>
-                            <span>4.4</span>
-                        </div>
-                        <div>.</div>
-                        <div>23 MINS</div>
-                        <div>.</div>
-                        <div>₹500 FOR TWO</div>
-
-                    </div>
-
-
-                    <div class="offer">
-                        <img style="color: brown;" src="discount.png" alt=""> Flat ₹125 off on orders above ₹249
-
-                    </div>
-                </div>
-
-            </div>
-            <div class="food">
-                <div>
-                   <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/wz3dfvamdawymtxdspu5" alt="">
-                    <h4>R Bhagat Tarrachand</h4>
-                    <p><small>North Indian, Chinese, Street Food</small></p>
-                    <div class="rate">
-                        <div>
-                            <span><i class="fa-regular fa-star"></i></span>
-                            <span>4.4</span>
-                        </div>
-                        <div>.</div>
-                        <div>21 MINS</div>
-                        <div>.</div>
-                        <div>₹150 FOR TWO</div>
-
-
-                    </div>
-
-
-                    <div class="offer">
-                        <img style="color: brown;" src="discount.png" alt=""> 30% off | Use TRYNEW
-
-                    </div>
-                </div>
-
-                <div>
-                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/7bb739d7f6ae8b4ce8ed590765dffd2f"
+                <p>© 2023 Swiggy</p>
+                <div class="imgg">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-facebook_tfqsuc"
                         alt="">
-                    <h4>McDonald's</h4>
-                    <p><small>Burgers, Beverages, Cafe, Desserts</small></p>
-                    <div class="rate">
-                        <div>
-                            <span><i class="fa-regular fa-star"></i></span>
-                            <span>4.4</span>
-                        </div>
-                        <div>.</div>
-                        <div>14 MINS</div>
-                        <div>.</div>
-                        <div>₹200 FOR TWO</div>
-
-                    </div>
-
-
-                    <div class="offer">
-                        <img style="color: brown;" src="discount.png" alt=""> 20% off | Use TRYNEW
-
-                    </div>
-                </div>
-                <div>
-                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/wnzhrkqvnkiriqajencb" alt="">
-                    <h4>The Belgian Waffle Co.</h4>
-                    <p><small>Burgers, Beverages, Cafe, Desserts</small></p>
-                    <div class="rate">
-                        <div>
-                            <span><i class="fa-regular fa-star"></i></span>
-                            <span>4.4</span>
-                        </div>
-                        <div>.</div>
-                        <div>19 MINS</div>
-                        <div>.</div>
-                        <div>₹200 FOR TWO</div>
-
-                    </div>
-
-
-                    <div class="offer">
-                        <img style="color: brown;" src="discount.png" alt=""> 20% off | Use TRYNEW
-
-                    </div>
-                </div>
-                <div>
-                   <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/f87ny0p8hpeynrv0ycc5" alt="">
-                    <h4>Meraki</h4>
-                    <p><small>Chinese</small></p>
-                    <div class="rate">
-                        <div>
-                            <span><i class="fa-regular fa-star"></i></span>
-                            <span>4.4</span>
-                        </div>
-                        <div>.</div>
-                        <div>23 MINS</div>
-                        <div>.</div>
-                        <div>₹500 FOR TWO</div>
-
-                    </div>
-
-
-                    <div class="offer">
-                        <img style="color: brown;" src="discount.png" alt=""> Flat ₹125 off on orders above ₹249
-
-                    </div>
-                </div>
-
-            </div>
-            <div class="food">
-                <div>
-                   <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/wz3dfvamdawymtxdspu5" alt="">
-                    <h4>R Bhagat Tarrachand</h4>
-                    <p><small>North Indian, Chinese, Street Food</small></p>
-                    <div class="rate">
-                        <div>
-                            <span><i class="fa-regular fa-star"></i></span>
-                            <span>4.4</span>
-                        </div>
-                        <div>.</div>
-                        <div>21 MINS</div>
-                        <div>.</div>
-                        <div>₹150 FOR TWO</div>
-
-
-                    </div>
-
-
-                    <div class="offer">
-                        <img style="color: brown;" src="discount.png" alt=""> 30% off | Use TRYNEW
-
-                    </div>
-                </div>
-
-                <div>
-                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/7bb739d7f6ae8b4ce8ed590765dffd2f"
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-pinterest_kmz2wd"
                         alt="">
-                    <h4>McDonald's</h4>
-                    <p><small>Burgers, Beverages, Cafe, Desserts</small></p>
-                    <div class="rate">
-                        <div>
-                            <span><i class="fa-regular fa-star"></i></span>
-                            <span>4.4</span>
-                        </div>
-                        <div>.</div>
-                        <div>14 MINS</div>
-                        <div>.</div>
-                        <div>₹200 FOR TWO</div>
-
-                    </div>
-
-
-                    <div class="offer">
-                        <img style="color: brown;" src="discount.png" alt=""> 20% off | Use TRYNEW
-
-                    </div>
-                </div>
-                <div>
-                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/wnzhrkqvnkiriqajencb" alt="">
-                    <h4>The Belgian Waffle Co.</h4>
-                    <p><small>Burgers, Beverages, Cafe, Desserts</small></p>
-                    <div class="rate">
-                        <div>
-                            <span><i class="fa-regular fa-star"></i></span>
-                            <span>4.4</span>
-                        </div>
-                        <div>.</div>
-                        <div>19 MINS</div>
-                        <div>.</div>
-                        <div>₹200 FOR TWO</div>
-
-                    </div>
-
-
-                    <div class="offer">
-                        <img style="color: brown;" src="discount.png" alt=""> 20% off | Use TRYNEW
-
-                    </div>
-                </div>
-                <div>
-                   <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/f87ny0p8hpeynrv0ycc5" alt="">
-                    <h4>Meraki</h4>
-                    <p><small>Chinese</small></p>
-                    <div class="rate">
-                        <div>
-                            <span><i class="fa-regular fa-star"></i></span>
-                            <span>4.4</span>
-                        </div>
-                        <div>.</div>
-                        <div>23 MINS</div>
-                        <div>.</div>
-                        <div>₹500 FOR TWO</div>
-
-                    </div>
-
-
-                    <div class="offer">
-                        <img style="color: brown;" src="discount.png" alt=""> Flat ₹125 off on orders above ₹249
-
-                    </div>
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-instagram_b7nubh"
+                        alt="">
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-twitter_gtq8dv"
+                        alt="">
                 </div>
 
             </div>
-
-
-
-        </div>
-        <div class="footer">
-            <div class="list">
-                <h2 <font style="color: grey;">COMPANY </font>
-                </h2><br>
-                <p>About us</p><br>
-                <p>Team</p><br>
-                <p>Careers</p><br>
-                <p>Swiggy Blog</p><br>
-                <p>Bug Bounty</p><br>
-                <p>Swiggy One</p><br>
-                <p>Swiggy Corporate</p><br>
-                <p>Swiggy Instamart</p><br>
-                <p>Swiggy Genie</p>
-
-            </div>
-            <div class="list">
-                <h2 <font style="color: grey;">CONTACT </font>
-                </h2><br>
-                <p>Help & Support</p><br>
-                <p>Partner with us</p><br>
-                <p>Ride with us</p>
-
-
-            </div>
-            <div class="list">
-                <h2 <font style="color: grey;">LEGAL </font>
-                </h2><br>
-                <p>Terms & Conditions </p><br>
-                <p>Refund & Cancellation</p><br>
-                <p>Privacy Policy</p><br>
-                <p>Cookie Policy</p><br>
-                <p>Offer Terms</p><br>
-                <p> Phishing & Fraud</p><br>
-                <p>Corporate -Swiggy Money Codes Terms and Conditions</p><br>
-                <p>Corporate - Swiggy Discount Voucher Terms and</p>
-
-
-
-            </div>
-
-            <div class="list">
-                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/play_ip0jfp"
-                    alt=""><br><br>
-                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/iOS_ajgrty"
-                    alt="">
-
-
-
-            </div>
-        </div>
-        <div class="footer2">
-            <div class="list">
-                <h2 <font style="color: grey;">WE DELIVER TO</font>
-                </h2><br>
-
-                <p>Adilabad</p><br>
-                <p>Adityapur</p><br>
-                <p>Adoni</p><br>
-                <p>Agartala</p><br>
-                <p>Agra</p><br>
-                <p>Ahmedabad</p><br>
-                <p>Ahmednagar</p><br>
-                <p>Aizawl</p><br>
-                <p>Ajmer</p><br>
-                <p>Akola</p><br>
-                <p>Alappuzha</p><br>
-                <p>Aligarh</p><br>
-                <p>Alipurduar</p>
-
-            </div>
-            <div class="list">
-                <br>
-                <p>Dehradun</p><br>
-                <p> Dehri</p><br>
-                <p>Delhi</p><br>
-                <p>Deoghar</p><br>
-                <p>Deoria-City</p><br>
-                <p>Dewas</p><br>
-                <p>Dhanbad</p><br>
-                <p>Dhar</p><br>
-                <p>Dharamshala</p><br>
-                <p>Dharapuram</p><br>
-                <p>Dharmapuri</p><br>
-                <p>Dharwad</p><br>
-                <p>Dholpur</p><br>
-                <p>Dhule</p>
-
-
-            </div>
-            <div class="list">
-                <br>
-                <p></p>Khanna</p><br>
-                <p> Kharagpur</p><br>
-                <p>Kishanganj</p><br>
-                <p>Kishangarh</p><br>
-                <p>Kochi</p><br>
-                <p>Kodaikanal</p><br>
-                <p>Kohima</p><br>
-                <p>Kokrajhar</p><br>
-                <p>Kolar</p><br>
-                <p>Kolhapur</p><br>
-                <p>Kolkata</p><br>
-                <p>Kollam</p><br>
-                <p>Koppal</p><br>
-                <p>Korba</p>
-
-            </div>
-            <div class="list">
-                <br>
-                <p></p>Khanna</p><br>
-                <p> Kharagpur</p><br>
-                <p>Kishanganj</p><br>
-                <p>Kishangarh</p><br>
-                <p>Kochi</p><br>
-                <p>Kodaikanal</p><br>
-                <p>Kohima</p><br>
-                <p>Kokrajhar</p><br>
-                <p>Kolar</p><br>
-                <p>Kolhapur</p><br>
-                <p>Kolkata</p><br>
-                <p>Kollam</p><br>
-                <p>Koppal</p><br>
-                <p>Korba</p>
-
-            </div>
-
-        </div>
-        <div class="footer3">
-            <div class="last">
-                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_284/Logo_f5xzza"
-                    alt="">
-            </div>
-            <p>© 2023 Swiggy</p>
-            <div class="imgg">
-                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-facebook_tfqsuc"
-                    alt="">
-                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-pinterest_kmz2wd"
-                    alt="">
-                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-instagram_b7nubh"
-                    alt="">
-                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_48,h_48/icon-twitter_gtq8dv"
-                    alt="">
-            </div>
-
-    </div>
 
 </body>
 

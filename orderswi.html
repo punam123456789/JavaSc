@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/4781840b9b.js" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        #screen {
+            width: 100%;
+            height: 1500px;
+            border: 3px solid rgb(209, 23, 23);
+
+        }
+
+        #navbar {
+            height: 80px;
+            width: 100%;
+            border: 1px solid green;
+            display: flex;
+            background-color: white;
+            cursor: pointer;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+            position: fixed;
+            top: 0;
+        }
+
+        #logo {
+            display: flex;
+        }
+
+        #logo>div:nth-child(1)>img:hover {
+
+            transform: scale(1.5);
+        }
+        #logo>div:nth-child(1) {
+            margin-bottom: 30px;
+            /* border: 1px solid red; */
+            /* margin-left: 60px; */
+            padding-left: 60px;
+            padding-top: 10px;
+
+        }
+        #logo>img {
+            width: 30%;
+            height: 55px;
+            margin: 25px;
+            /* margin-bottom: 30px;  */
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div id="logo">
+                <div>
+                    <img src="logoswig.jpg">
+                </div>
+                <div>
+                    <p><b><u>Vashi</u></b> Navi Mumbai, Maharashtra, India</p>
+                </div>
+            </div>
+
+            <div id="menu">
+                <div>
+                    <h4> <i class="fa-solid fa-magnifying-glass"></i><a>Search</a></h4>
+                </div>
+                <div>
+                    <h4><img src="discount.png" alt="img"><a>Offers</a></h4>
+                </div>
+                <div>
+                    <h4><img src="help.png" alt=""><a>help</a></h4>
+                </div>
+                <div>
+                    <h4><img src="refer.png" alt=""><a>Sign in</a></h4>
+                </div>
+                <div>
+                    <h4><img src="shopping-cart.png" alt=""><a>Cart</a></h4>
+                </div>
+
+
+            </div>
+
+        </div>
+</body>
+
+</html>
