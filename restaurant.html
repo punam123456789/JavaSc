@@ -17,8 +17,8 @@
 
         #screen {
             width: 100%;
-            /* height: 100%; */
-            
+            height: 25000px;
+
             /* border: 3px solid rgb(209, 23, 23); */
 
         }
@@ -68,6 +68,7 @@
             /* border: 1px solid red; */
             width: 400px;
             height: 50px;
+            margin-top: 30px;
             /* padding-left: 30px; */
             /* margin-bottom: 20px; */
 
@@ -76,12 +77,14 @@
 
         #logo>div:nth-child(2)>p {
             justify-content: center;
-            margin-top: 30px;
+            /* margin-top: 30px; */
+            /* padding-top: 20px; */
         }
 
         #logo>div:nth-child(2)>p>b {
 
             margin-right: 5px;
+            /* margin-top: 30px;  */
 
         }
 
@@ -179,15 +182,17 @@
 
         #sc {
 
-            width: 95%;
-            height: 1500px;
+            width: 65%;
+            /* height: 55000px; */
             margin-top: 20px;
-            margin-left: 50px;
+            margin-left: 180px;
+            /* justify-content: center; */
+
 
             /* padding: 0px 40px 0px 40px; */
 
             border: 1px solid black;
-            background-color: transparent
+            background-color: hwb(0 100% 0%)
         }
 
         #test {
@@ -220,21 +225,324 @@
         }
 
         #veg {
-            /* max-width: 700px;
-            min-width: 700px;
-            padding: 30px;
-            font-size: 1.43rem;
-            font-weight: 600;
-            color: #282c3f;
-            margin-bottom: 8px;
-            text-transform: capitalize;
-            margin-left: 0;
-         */
-            border: 1px solid red;
-            width: 50%;
-            /* padding-left: 50px; */
-            margin-left: 20%;
 
+            /* border: 1px solid red; */
+            width: 80%;
+            /* padding-left: 50px; */
+            margin-left: 12%;
+            /* padding: 0px 30px; */
+            margin-top: 20px;
+            display: flex;
+            border-bottom: 1px dashed grey;
+            padding-bottom: 15px;
+
+
+
+
+        }
+
+        #veg>div:nth-child(1) {
+            /* margin-left: ; */
+            width: 100%;
+            /* border: 1px solid blue; */
+
+        }
+
+        #veg>div:nth-child(1) p {
+            font-size: smaller;
+            font-weight: 100;
+            font-weight: normal;
+            color: #93959f;
+
+
+        }
+
+        #veg>div:nth-child(2) {
+            margin-left: 20px;
+            width: 55px;
+            height: 40px;
+            /* border: 1px solid hsl(0, 6%, 88%); */
+            padding: 5px 5px;
+
+
+
+        }
+
+        #veg>div:nth-child(2)>button {
+            color: #12e912;
+            border: 1px solid #e9e9eb;
+            box-shadow: 0 1px 5px #f9f9f9;
+            border-radius: 6px;
+            text-align: center;
+            padding: 8px;
+            max-width: 100px;
+            float: right;
+
+
+        }
+
+        #veg>div:nth-child(2)>div>button>p {
+            font-size: smaller;
+            border-top: 1px solid hsl(0, 6%, 88%);
+            color: none;
+        }
+
+        #flat {
+            margin-top: 10px;
+            width: 80%;
+            /* height: 1200px; */
+            border: 1px solid blue;
+            margin-left: 12%;
+
+        }
+
+        #cur {
+            display: flex;
+            padding-top: 10px;
+        }
+
+        #cur>div:nth-child(1) {
+            /* border: 1px solid red; */
+            height: 20%;
+            width: 20%;
+            display: flex;
+            gap: 0;
+        }
+
+        #cur>div:nth-child(1)>p {
+            margin: 0px 0px 0px 20px;
+            font-weight: bolder;
+        }
+
+        #cur>div:nth-child(2) {
+            /* border: 1px solid red; */
+            height: 20%;
+            width: 20%;
+            display: flex;
+        }
+
+        #cur>div:nth-child(2)>button {
+            width: 20px;
+            border-radius: 50%;
+            background-color: white;
+            height: 20px;
+        }
+
+        #cur>div:nth-child(2)>p {
+            margin: 0px 0px 0px 20px;
+            font-weight: bolder;
+            font: 900;
+        }
+
+        #msg {
+            background-color: #f1f1f6;
+            border-radius: 8px;
+            position: relative;
+            padding: 14px 18px 14px 16px;
+            margin-top: 16px;
+            font-weight: 400;
+        }
+
+        #scr>div {
+            background-color: #fff;
+            color: #3d4152;
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 6;
+            overflow: hidden;
+            contain: strict;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid transparent;
+            padding-right: 4px;
+        }
+
+        #buttn {
+            width: 150px;
+            height: 40px;
+            border-radius: 30px;
+            background: #5d8ed5;
+            color: #fff;
+            text-align: center;
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .3), 0 2px 1px 0 rgba(93, 141, 213, .2);
+            padding: 14px;
+            font-weight: 600;
+            font-size: .93rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+            will-change: transform;
+
+            transform: scaleX(1);
+            transition: transform .25s ease-in-out;
+        }
+
+        #off {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #off>div {
+            margin-top: 20px;
+            width: 24%;
+            height: 60px;
+            border: 1px solid #eeececc7;
+            border-radius: 8px;
+
+
+        }
+
+        #off .fun>div {
+            display: flex;
+            padding-top: 10px;
+            gap: 2;
+        }
+
+        #off .fun>div>img {
+            width: 25px;
+            height: 25px;
+        }
+
+        #off .fun>div>h3 {
+            font-size: small;
+        }
+
+        #off .fun>p {
+            font-size: smaller;
+        }
+
+        #vegi {
+            margin-top: 20px;
+            border-bottom: 1px solid grey;
+            width: 100%;
+            height: 40px;
+            padding: 10px 10px;
+            display: flex;
+
+        }
+
+        #vegi>div:nth-child(1)>i {
+            color: #11c211;
+
+        }
+
+        #vegi>div:nth-child(2) {
+            padding-left: 10px;
+            font-size: small;
+
+        }
+
+        #roti {
+            border: 1px solid grey;
+            height: 20px;
+            width: 100%;
+            margin-top: 30px;
+            font-size: larger;
+            display: flex;
+            height: 50px;
+            margin-top: 30px;
+            font-size: larger;
+            border-bottom: 12px solid hwb(0 87% 12%);
+
+
+
+        }
+
+        #roti>p {
+            padding-top: 10px;
+        }
+
+        #roti>div {
+            float: right;
+            margin: 0px 20px 40px 0px;
+            /* padding-bottom: 20px; */
+            /* border: 1px solid red; */
+            margin-bottom: 10px;
+        }
+
+        #roti>div:nth-child(2)>i {
+            margin-bottom: 10px;
+
+        }
+
+
+        #roti>div:nth-child(1) {
+            width: 97%;
+            height: 30px;
+        }
+
+        #dosa {
+            /* border: 1px solid grey; */
+            height: 50px;
+            width: 100%;
+            margin-top: 30px;
+            font-size: larger;
+            display: flex;
+        }
+
+        #dosa>div:nth-child(1) {
+            width: 97%;
+            height: 30px;
+        }
+
+
+        #dosa>div:nth-child(2) {
+
+            float: right;
+            /* border: 1px solid red; */
+
+        }
+
+        #icon {
+            float: right;
+            margin: 0px 20px 40px 0px;
+            /* padding-bottom: 20px; */
+            /* border: 1px solid red; */
+            margin-bottom: 10px;
+        }
+
+        #dosa>div>i {
+            margin-bottom: 10px;
+
+        }
+
+        .best {
+            /* display: flex; */
+            border-bottom: 1px solid hsl(0, 13%, 91%);
+            height: 80px;
+        }
+
+        .sell {
+            display: flex;
+            /* margin-bottom: 10px; */
+        }
+
+        .sell>div:nth-child(1)>img {
+            width: 20px;
+            height: 20px;
+            margin-top: 20px;
+        }
+
+        .sell>div:nth-child(2)>i {
+            color: #ffa700;
+            margin-left: 10px;
+            margin-top: 20px;
+
+        }
+
+        .sell>div:nth-child(3)>p {
+            color: #ffa700;
+            margin-left: 5px;
+            margin-top: 20px;
+
+
+        }
+
+        .best>div:nth-child(4)>p {
+            display: flex none;
         }
     </style>
 </head>
@@ -246,7 +554,9 @@
                 <div>
                     <img src="logoswig.jpg">
                 </div>
-                lo
+                <div>
+                    <p><b><u>Vashi</u></b> Navi Mumbai, Maharashtra, India</p>
+                </div>
             </div>
 
             <div id="menu">
@@ -273,6 +583,18 @@
             </div>
         </div>
         <div id="sc">
+            <!-- <div id="scr">
+                <div>
+                    Navaratna Veg Restaurant
+                </div>
+                <div>
+                    15 MINS
+                </div>
+
+            </div> -->
+            <!-- <div id="buttn">
+
+            </div> -->
             <div id="test">
                 <div>
                     <a href="https://www.swiggy.com/"></a>
@@ -301,11 +623,386 @@
                 <div>
                     <h4>Navaratna Veg Restaurant</h4>
                     <p>Indian, Chinese</p>
+                    <p>Vashi,
+
+                        0.8 km
+
+                        ▾</p>
                 </div>
+                <div>
+                    <button><i class="fa-regular fa-star"></i>
+                        <span>4.4</span>
+                        <div>
+                            <p>10k+rating</p>
+                        </div>
+                    </button>
+
+                </div>
+            </div>
+            <div id="flat">
+                <div id="cur">
+                    <div>
+                        <img src="resta.jpg" alt="">
+                        <p>Currently</p>
+                    </div>
+                    <div>
+                        <button><i class="fa fa-rupee"></i></button>
+                        <p>₹300 for two</p>
+                    </div>
+                </div>
+                <div id="msg">
+                    <div style="color:#F57E47" class="RestaurantTimeCost_messageTooltip__2sdMH">Uh-oh! Outlet is not
+                        accepting orders at the moment. They should be back by 7:00 AM tomorrow</div>
+                </div>
+                <div id="off">
+                    <div class="fun">
+                        <div><img
+                                src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_28,h_28/Store_Assets/Icons/OfferIconCart"
+                                alt="">
+                            <h3>50% OFF UPTO ₹100</h3>
+                        </div>
+                        <p>USE TRYNEW|ABOVE ₹159</p>
+
+                    </div>
+                    <div class="fun">
+                        <div><img
+                                src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_28,h_28/Store_Assets/Icons/OfferIconCart"
+                                alt="">
+                            <h3>50% OFF UPTO ₹100</h3>
+                        </div>
+                        <p>USE TRYNEW|ABOVE ₹159</p>
+                    </div>
+                    <div class="fun">
+                        <div><img
+                                src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_28,h_28/Store_Assets/Icons/OfferIconCart"
+                                alt="">
+                            <h3>50% OFF UPTO ₹100</h3>
+                        </div>
+                        <p>USE TRYNEW|ABOVE ₹159</p>
+                    </div>
+                    <div class="fun">
+                        <div><img
+                                src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_28,h_28/Store_Assets/Icons/OfferIconCart"
+                                alt="">
+                            <h3>50% OFF UPTO ₹100</h3>
+                        </div>
+                        <p>USE TRYNEW|ABOVE ₹159</p>
+                    </div>
+                </div>
+                <div id="vegi">
+
+                    <div>
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <div>
+                        <p>PURE VEG</p>
+                    </div>
+
+
+                </div>
+                <div id="roti">
+                    <div>
+                        <p><b>Tandoor Roti (31)</b></p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                </div>
+                <div id="roti">
+                    <div>
+                        <p><b>Tava Chapati (6)</b></p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                </div>
+                <div id="roti">
+                    <div>
+                        <p><b>Holi Special (6)</b></p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                </div>
+                <div id="roti">
+                    <div>
+                        <p><b>South Indian (16)</b></p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+
+                </div>
+                <div id="dosa">
+                    <div>
+                        <p><b>Dosas (65)</b></p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-angle-up"></i>
+                    </div>
+
+
+
+
+                </div>
+                <div class="best">
+                    <div class="sell">
+                        <div>
+                            <img src="veg.jpg" alt="">
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div>
+                            <p>BestSeller</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p><b>Sadha Dosa</b></p>
+                        <p><small>Rs.115</p></small>
+                    </div>
+                </div>
+
+                <div class="best">
+                    <div class="sell">
+                        <div>
+                            <img src="veg.jpg" alt="">
+                        </div>
+                        <!-- <div>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div>
+                            <p>BestSeller</p>
+                        </div> -->
+                    </div>
+                    <div>
+                        <p><b>Ghee Sadha Dosa</b></p>
+                        <p><small>Rs.115</p></small>
+                    </div>
+                </div>
+
+                <div class="best">
+                    <div class="sell">
+                        <div>
+                            <img src="veg.jpg" alt="">
+                        </div>
+                        <!-- <div>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div>
+                            <p>BestSeller</p>
+                        </div> -->
+                    </div>
+                    <div>
+                        <p><b>Butter Sadha Dosa</b></p>
+                        <p><small>Rs.125</p></small>
+                    </div>
+                </div>
+
+                <div class="best">
+                    <div class="sell">
+                        <div>
+                            <img src="veg.jpg" alt="">
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div>
+                            <p>BestSeller</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p><b>Masala Sadha Dosa</b></p>
+                        <p><small>Rs.135</p></small>
+                    </div>
+                </div>
+
+                <div class="best">
+                    <div class="sell">
+                        <div>
+                            <img src="veg.jpg" alt="">
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div>
+                            <p>BestSeller</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p><b> Butter Rava Sadha Dosa</b></p>
+                        <p><small>Rs.135</p></small>
+                    </div>
+                </div>
+                <div class="best">
+                    <div class="sell">
+                        <div>
+                            <img src="veg.jpg" alt="">
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div>
+                            <p>BestSeller</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p><b> Butter Rava Sadha Dosa</b></p>
+                        <p><small>Rs.135</p></small>
+                    </div>
+                </div>
+
+                <div class="best">
+                    <div class="sell">
+                        <div>
+                            <img src="veg.jpg" alt="">
+                        </div>
+                        <!-- <div>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div>
+                            <p>BestSeller</p>
+                        </div> -->
+                    </div>
+                    <div>
+                        <p><b> Butter Rava Sadha Dosa</b></p>
+                        <p><small>Rs.135</p></small>
+                    </div>
+                </div>
+
+                <div class="best">
+                    <div class="sell">
+                        <div>
+                            <img src="veg.jpg" alt="">
+                        </div>
+                        <!-- <div>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div>
+                            <p>BestSeller</p>
+                        </div> -->
+                    </div>
+                    <div>
+                        <p><b>Cheese Butter Rava Sadha Dosa</b></p>
+                        <p><small>Rs.235</p></small>
+                    </div>
+                </div>
+                <div class="best">
+                    <div class="sell">
+                        <div>
+                            <img src="veg.jpg" alt="">
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div>
+                            <p>BestSeller</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p><b> Butter Rava Sadha Dosa</b></p>
+                        <p><small>Rs.135</p></small>
+                    </div>
+                </div>
+                <div class="best">
+                    <div class="sell">
+                        <div>
+                            <img src="veg.jpg" alt="">
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div>
+                            <p>BestSeller</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p><b> Butter Rava Sadha Dosa</b></p>
+                        <p><small>Rs.135</p></small>
+                    </div>
+                </div>
+                <div class="best">
+                    <div class="sell">
+                        <div>
+                            <img src="veg.jpg" alt="">
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div>
+                            <p>BestSeller</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p><b> Butter Rava Sadha Dosa</b></p>
+                        <p><small>Rs.135</p></small>
+                    </div>
+                </div>
+                <div class="best">
+                    <div class="sell">
+                        <div>
+                            <img src="veg.jpg" alt="">
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div>
+                            <p>BestSeller</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p><b> Butter Rava Sadha Dosa</b></p>
+                        <p><small>Rs.135</p></small>
+                    </div>
+                </div>
+                <div class="best">
+                    <div class="sell">
+                        <div>
+                            <img src="veg.jpg" alt="">
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div>
+                            <p>BestSeller</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p><b> Butter Rava Sadha Dosa</b></p>
+                        <p><small>Rs.135</p></small>
+                    </div>
+                </div>
+                <div class="best">
+                    <div class="sell">
+                        <div>
+                            <img src="veg.jpg" alt="">
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div>
+                            <p>BestSeller</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p><b> Butter Rava Sadha Dosa</b></p>
+                        <p><small>Rs.135</p></small>
+                    </div>
+                </div>
+
+
+
             </div>
 
 
+
         </div>
+
+
+    </div>
     </div>
 
 </body>
