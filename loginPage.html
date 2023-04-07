@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        #screen {
+            width: 100%;
+            height: 1500px;
+            border: 3px solid rgb(209, 23, 23);
+
+        }
+
+        #scrn {
+            width: 75%;
+            height: 1000px;
+            border: 1px solid grey;
+            margin-left: 10%;
+            margin-top: 40px;
+        }
+
+        #log {
+            width: 100%;
+            height: 70px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            background-color: #252525;
+            border-bottom-width: 0;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            /* box-shadow: 0 7px 6px 0 hsla(261, 95%, 17%, 0.877); */
+
+
+        }
+
+        #log>div:nth-child(2) {
+            width: 82%;
+            /* border: 1px solid white; */
+
+        }
+
+        #log>div:nth-child(2)>h3 {
+            color: white;
+            margin-left: 5px;
+            font-size: 35px;
+        }
+
+        #wel>div {
+            /* text-align: right; */
+            float: right;
+            color: white;
+            /* border: 1px solid white; */
+            margin-left: 40px;
+            cursor: pointer;
+            box-sizing: border-box;
+
+
+
+        }
+
+        #wel>div:nth-child(1)>a {
+            float: right;
+            color: white;
+            /* border: 1px solid white; */
+        }
+
+        #nav {
+            background-color: hwb(173 1% 65% / 0.945);
+            width: 100%;
+            height: 20px;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+
+        }
+
+        #port {
+            width: 70%;
+            height: 40%;
+
+            border: 1px solid grey;
+            margin-top: 10px;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+
+        }
+
+        #list {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        #list>div:nth-child(1) {
+            margin-left: 20px;
+            border-right: 1px solid hwb(0 79% 13%);
+            width: 68%;
+            height: 150px;
+        }
+
+        #list>div:nth-child(2) {
+            /* border: 1px solid grey; */
+            width: 40%;
+            height: 150px;
+            /* margin-left: 40px; */
+        }
+
+        #content>div {
+            border-radius: 6px;
+            border-color: #8c8c8c;
+            font-size: 16px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            padding: 4px 10px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px inset;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            /* display: inline-block; */
+
+        }
+        #content>div:nth-child(3){
+            margin-top: 10px;
+            /* border: 1px solid black; */
+        }
+
+        #content>div>input {
+            border: none;
+            display: flex none;
+            margin-top: 10px;
+
+        }
+
+        #list>div:nth-child(1)>div:nth-child(2)>i {
+            margin-top: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+        <div id="scrn">
+            <div id="log">
+                <div>
+                    <img src="https://swiggysupport.freshdesk.com/assets/misc/logo.png" alt="">
+
+                </div>
+                <div>
+                    <h3>Swiggy</h3>
+                </div>
+                <div id="wel">
+                    <div>
+                        <h4>welcome</h4>
+                        <a href=""><b>Login</b></a>
+                    </div>
+                </div>
+
+            </div>
+            <div id="nav">
+                <div>
+
+                </div>
+
+            </div>
+            <div id="port">
+                <div id="list">
+                    <div>
+                        <div id="content">
+                            <h2>Login to the support portal</h2>
+                            <p>Enter the details below</p>
+                            <div>
+                                <input type="text" placeholder="Your E-mail address">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Password">
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

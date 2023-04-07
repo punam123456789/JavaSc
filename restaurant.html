@@ -718,6 +718,46 @@
             transform: scaleX(1);
             will-change: transform;
             transition: transform .5s cubic-bezier(.215, .61, .355, 1);
+         
+        }
+        @media screen and (max-width: 1080px) {
+        #navbar{
+        width: 100%;
+        margin: 0px;
+        position: fixed;
+        top: 0;
+            }
+            #logo{
+                display: flex;
+                justify-content: center;
+                flex-shrink: inherit;
+            }
+            #logo>div:nth-child(1){
+                width: 100%;
+            }
+            #logo>div>img {
+                width: 100%;
+                flex-shrink: inherit;
+            }
+            #logo>div:nth-child(2) {
+                width: 100%;
+                flex-shrink: inherit;
+                display: flex;
+                
+            }
+            #logo>div:nth-child(2)>p {
+                justify-content: center;
+                display: flex;
+            }
+            #logo>div:nth-child(2)>p>b {
+                width: 100%;
+            }
+            #menu {
+                display: flex;
+                width: 100%;
+                flex-shrink: inherit;
+                margin: 10px 0px 10px 40px;
+
 
         }
     </style>
