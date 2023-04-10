@@ -35,7 +35,7 @@
             /* border: 1px solid red; */
         }
 
-        #login>div:nth-child(1) {
+        /* #login>div:nth-child(1) {
             height: 90px;
             width: 180px;
 
@@ -49,9 +49,9 @@
             transform: scale(1);
             margin-left: 50px;
 
-        }
+        } */
 
-        #log {
+        .buttons {
             margin-left: 400px;
             margin-top: 92px;
             display: flex;
@@ -63,8 +63,46 @@
 
         }
 
-        #log>div:nth-child(1) {
-            /* border: 1px solid yellow;     */
+        .buttons>div {
+            /* border: 1px solid black; */
+            width: 60px;
+            height: 40px;
+            font-size: larger;
+
+        }
+
+        .button .buttons-link {
+            background: #fff;
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .button>a>div>button {
+            height: 40px;
+            width: 80px;
+            /* border: 1px solid red; */
+            color: blue;
+            /* background-color: rgb(22, 5, 5); */
+            background-color: rgb(224, 96, 11);
+            border-radius: 6px;
+            font-size: large;
+
+        }
+        
+        .butt>div>button {
+            height: 40px;
+            width: 80px;
+            /* border: 1px solid red; */
+            margin-left: 30px;
+            color: blue;
+            background-color: rgb(224, 96, 11);
+            border-radius: 6px;
+            font-size: large;
+        }
+
+        /* #log>div:nth-child(1) {
+            border: 1px solid yellow;    
             height: 20%;
             width: 40%;
 
@@ -85,9 +123,9 @@
             line-height: 40px;
             width: auto;
 
-        }
+        } */
 
-        #log>div:nth-child(2) {
+        /* #log>div:nth-child(2) {
             cursor: pointer;
             display: inline-block;
             text-align: center;
@@ -106,11 +144,13 @@
             line-height: 40px;
             width: 100px;
 
-        }
+        } */
+
 
         #info {
             margin-left: 63px;
             margin-top: 77px;
+            margin-bottom: 20px;
         }
 
         #info>div:nth-child(1)>h1 {
@@ -122,16 +162,35 @@
             font-size: 22px;
         }
 
-        #inp {
+        /* #inp {
+            display: flex;
+        } */
+        .location-box {
             display: flex;
         }
 
-        #inp>input {
+        .location-search {
+            display: flex;
+        }
+
+        /* #inp>input {
+            display: flex;
+            margin-top: 22px;
+        } */
+        .location-search>input {
             display: flex;
             margin-top: 22px;
         }
 
-        #inp>input {
+        /* #inp>input {
+            width: 380px;
+            height: 36px;
+            border: 1px solid rgb(241, 76, 16);
+            border-right: none;
+            padding: 8px;
+        } */
+
+        .location-search>input {
             width: 380px;
             height: 36px;
             border: 1px solid rgb(241, 76, 16);
@@ -139,7 +198,7 @@
             padding: 8px;
         }
 
-        #inp>button {
+        /* #inp>button {
             width: 120px;
             height: 54px;
             background-color: rgb(237, 74, 15);
@@ -148,6 +207,38 @@
             color: white;
             margin-top: 22px;
             cursor: pointer
+        } */
+
+        .location-button {
+            width: 120px;
+            height: 54px;
+            background-color: rgb(237, 74, 15);
+            border: none;
+            font-size: 16px;
+            color: white;
+            margin-top: 22px;
+            cursor: pointer;
+
+
+        }
+
+        .location-button>a {
+            align-content: center;
+            /* border: 1px solid black; */
+            margin-top: 20px;
+
+        }
+
+        .bottom {
+            /* display: flex; */
+            margin-top: 10px;
+        }
+
+        .bottom>ul {
+            margin-top: 10px;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
         }
 
         #city {
@@ -702,29 +793,76 @@
                 <div>
                     <img src="swiggy.jpg" alt="img">
                 </div>
-                <div id="log">
+                <!-- <div id="log">
                     <div>
                         <a>Login</a>
                     </div>
                     <div>
                         <a>Sign up</a>
-                    </div>
+                    </div> -->
 
+                <div class="buttons">
+                    <div class="button">
+
+                        <a href="/loginPage.html" class="buttons-link">
+                            <div>
+                                <!-- <a href="#" id="btn1">Login</a> -->
+                                <button>Login</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                         <div class="butt">
+
+                        <!-- <a href="#" id="btn2">Sign up</a> -->
+                        <div>
+                            <!-- <a href="#" id="btn1">Login</a> -->
+                            <button>Sign up</button>
+                        </div>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- </div> -->
                 <div id="info">
                     <div>
                         <h1>Cooking gone wrong?</h1>
                         <p>Order food from favourite restaurants near you.</p>
                     </div>
-                    <div id="inp">
+
+                    <!-- <div id="inp">
                         <input type="text" placeholder="Enter Your Delivery Location">
                         <button><span>Find Food</span></button>
 
                     </div>
+                
                     <div id="city">
                         <h4 <font style="color: grey;">POPULAR CITIES IN INDIA</font>
                         </h4>
                         <p>AhmedabadBangaloreChennaiDelhiGurgaonHyderabadKolkataMumbaiPune& more.</p>
+                    </div> -->
+                    <div class="location-box">
+                        <div class="location-search">
+                            <input type="text" placeholder="Enter your delivery location" />
+                        </div>
+                        <div class="location-button">
+                            <a href="#">FIND FOOD</a>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <h4>POPULAR CITIES IN INDIA</h4>
+                        <ul>
+                            <li><a href="#">Ahmedabad</a></li>
+                            <li><a href="#">Bangalore</a></li>
+                            <li><a href="#">Chennai</a></li>
+                            <li><a href="#">Delhi</a></li>
+                            <li><a href="#">Gurgaon</a></li>
+                            <li><a href="#">Hyderabad</a></li>
+                            <li><a href="#">Kolkata</a></li>
+                            <li><a href="#">Mumbai</a></li>
+                            <li><a href="#">Pune</a></li>
+                            <li><a href="#">& more.</a></li>
+                        </ul>
                     </div>
 
 
