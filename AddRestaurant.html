@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addRestaurant</title>
+</head>
+<body>
+    <form onsubmit="addRestaurant(event)">
+
+        <label>Restaurant Image url</label><br />
+        <input type="text" id="resimage" /><br />
+        <label>Restaurant Name</label><br />
+        <input type="text" id="resname" /><br />
+        <label>Restaurant Price</label><br />
+        <input type="text" id="resprice" /><br />
+
+      
+
+        <input type="submit" /><br />
+
+
+    </form>
+    <script>
+        function addRestaurant(event){
+            event.preventDefault();
+            var resImage = document.getElementById("resimage").value;
+            var resName = document.getElementById("resname").value;
+            var resPrice = document.getElementById("resprice").value;
+           
+
+            var product = {resImage, resName ,resPrice};
+
+            var LS = JSON.parse(localStorage.getItem("hotel")) || [];
+            LS.push(product);
+            localStorage.setItem("hotel", JSON.stringify(LS));
+            alert("product added succefully..")
+        }
+    </script>
+</body>
+</html>
+</html>

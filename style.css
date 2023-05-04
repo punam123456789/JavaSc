@@ -152,6 +152,49 @@
 .pics>img:hover {
     transform: scale(1.1);
 }
+#navb{
+  width:100%;
+  height:100px;
+  background-color: white;
+  /* border:1px solid red; */
+  display: flex;
+  justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+   top: 0;
+   box-shadow: 10px 2px 2px rgb(235, 234, 234);
+  z-index: 2;
+}
+#navb>div{
+  width:100%;
+  border-bottom:1px solid grey;
+  display: flex;
+  align-items: end;
+
+}
+#navb>div>div:nth-child(1){
+  width:35%;
+  height:70%;
+  /* border:1px solid blue; */
+  display: flex;
+  align-items: center;
+}
+#navb>div>div:nth-child(2){
+  width:65%;
+  height:50%;
+  /* border:1px solid blue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+#navb>div>div:nth-child(2)>div>p{
+  font-size: 20px;
+  color:rgb(100, 99, 99);
+}
+#navb>div>div:nth-child(2)>div:nth-child(6)>p{
+  color:black;
+}
   
   /* Content Section */
   .restaurants .container {
@@ -358,6 +401,26 @@
     text-transform: uppercase;
     font-weight: 600;
   }
+  #hotel {
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+#hotel>div {
+    width: 18%;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#hotel>div>img {
+    width: 100%;
+    height: 200px;
+}
   .footer {
     padding: 0 20px;
     z-index: 10;
