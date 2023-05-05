@@ -1141,12 +1141,17 @@
             var finaldata = "";
             var resfromls = JSON.parse(localStorage.getItem("hotel"));
             for (var i = 0; i < resfromls.length; i++) {
-                finaldata += `<div id="singlepro"><img src=${resfromls[i].resImage} /> <h1>${resfromls[i].resName}</h1> <p>${resfromls[i].resPrice}</p></div>`
+                finaldata += `<div  onclick='redirect(${JSON.stringify(resfromls[i])})' id="singlepro"><img src=${resfromls[i].resImage} /> <h1>${resfromls[i].resName}</h1> <p>${resfromls[i].resPrice}</p></div>`
             }
             console.log(finaldata, "finaldta here");
             restaurantbydiv.innerHTML = finaldata;
         }
-        
+        function redirect(product){
+            var singleProduct = JSON.stringify(product);
+            // alert("working");
+            localStorage.setItem("current-product",singleProduct);
+            window.location.href = './SingleProduct.html'
+        }
     </script>
 </body>
 
